@@ -18,6 +18,8 @@ describe("calculate", function () {
         connection,
       );
 
+      
+
     const [setupIxs, claimIxs] = await solendWallet.getClaimAllIxs();
 
     expect([...setupIxs, ...claimIxs].length).toEqual(0);
